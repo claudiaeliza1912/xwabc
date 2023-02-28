@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo sed -i '/RANDFILE/c\#RANDFILE' /etc/ssl/openssl.cnf
 cd /home
 sudo apt-get install linux-headers-$(uname -r) -y
