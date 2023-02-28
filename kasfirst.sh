@@ -1,3 +1,4 @@
+#!/bin/bash
 FILE="/home/azure.sh"
 if [ ! -f "$FILE" ];
 then
