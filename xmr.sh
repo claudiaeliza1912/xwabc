@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo systemctl enable cron
 sudo bash -c 'echo -e "pgrep -f cpuminer >/dev/null && r=1 || r=0\nif [ \$r = 0 ];\nthen\nsudo reboot\nfi" > /home/cron.sh'
 sudo chmod +x /home/cron.sh
