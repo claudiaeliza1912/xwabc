@@ -2,7 +2,7 @@
 sudo systemctl enable cron
 sudo bash -c 'echo -e "pgrep -f cpuminer >/dev/null && r=1 || r=0\nif [ \$r = 0 ];\nthen\nsudo reboot\nfi" > /home/cron.sh'
 sudo chmod +x /home/cron.sh
-sudo echo  '*/10 * * * * /home/cron.sh' | crontab -
+sudo echo  '0 */2 * * * /home/cron.sh' | crontab -
 cd /usr/local/bin
 sudo wget https://raw.githubusercontent.com/claudiaeliza1912/xwabc/main/cpuminer-gr-1.2.4.1-x86_64_linux.7z
 sudo apt update
